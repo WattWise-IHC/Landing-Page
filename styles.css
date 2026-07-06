@@ -1097,6 +1097,47 @@ ul {
     font-weight:600;
 }
 
+.chart-description{
+    display:block;
+    margin-top:4px;
+    color:#6b7280;
+    font-size:.82rem;
+    font-weight:500;
+}
+
+.chart-summary{
+    margin-top:18px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    gap:18px;
+}
+
+.summary-item{
+    flex:1;
+    text-align:center;
+}
+
+.summary-item strong{
+    display:block;
+
+    font-size:1rem;
+
+    color:var(--text);
+}
+
+.summary-item span{
+    font-size:.78rem;
+
+    color:var(--muted);
+}
+
+.summary-item.positive strong{
+    color:#16a34a;
+}
+
 @media (max-width:768px){
   .logo img{height:40px;}
   .nav-links{top:86px;}
