@@ -714,7 +714,7 @@ ul {
   top: -17px;
   left: 50%;
   transform: translateX(-50%);
-  background: var(--primary);
+    background:#2563eb;
   color: white;
   border-radius: 999px;
   padding: 7px 22px;
@@ -735,7 +735,7 @@ ul {
 }
 
 .price.green {
-  color: var(--primary);
+    color:#15803d;
 }
 
 .price span {
@@ -910,10 +910,14 @@ ul {
 .socials {
   display: flex;
   gap: 16px;
+      color:white;
+
 }
 
 .socials a {
   font-size: 1.4rem;
+      color:var(--primary);
+
 }
 
 .copyright {
