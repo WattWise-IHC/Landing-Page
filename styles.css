@@ -88,12 +88,21 @@ ul {
 }
 
 .navbar {
-  min-height: 140px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+
+  min-height: 90px;
+
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 24px;
-  overflow: visible;
+
+  background: rgba(255,255,255,.95);
+  backdrop-filter: blur(10px);
+
+  border-bottom:1px solid rgba(0,0,0,.05);
 }
 
 .logo {
@@ -140,6 +149,11 @@ ul {
   background: var(--primary);
   border-radius: 9px;
   transition: width 0.25s ease;
+}
+
+.nav-links a.active{
+    color:var(--primary);
+    font-weight:800;
 }
 
 .nav-links a:hover::after{
@@ -1225,4 +1239,10 @@ ul {
   .nav-links{top:86px;}
   .chart-card{margin-left:0;}
   .cta-phone img{transform:translateY(20px);}
+}
+
+
+html{
+    scroll-behavior:smooth;
+    scroll-padding-top:100px;
 }
