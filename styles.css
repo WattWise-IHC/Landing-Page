@@ -899,12 +899,20 @@ ul {
 
 .footer h4 {
   color: white;
-  margin-bottom: 18px;
+  margin-bottom: 20px;
+  font-size: 1.1rem;
 }
-
 .footer a {
   display: block;
-  margin-bottom: 12px;
+  padding: 10px 0;
+  margin-bottom: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.footer a:hover {
+  color: var(--primary);
 }
 
 .socials {
@@ -915,11 +923,16 @@ ul {
 }
 
 .socials a {
-  font-size: 1.4rem;
-      color:var(--primary);
+font-size: 1.6rem;
+  padding: 10px;
+  border-radius: 50%;
+  transition: 0.3s;      color:var(--primary);
 
 }
 
+.socials a:hover {
+  background: rgba(255,255,255,0.1);
+}
 .copyright {
   margin-top: 50px;
   padding-top: 24px;
